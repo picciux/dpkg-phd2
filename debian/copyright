@@ -1,769 +1,12 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: phd2
-Upstream-Contact: <preferred name and address to reach the upstream project>
-Source: <url://example.com>
-#
-# Please double check copyright with the licensecheck(1) command.
+Upstream-Contact: Andy Galasso <andy.galasso@gmail.com>
+Source: https://github.com/OpenPHDGuiding/phd2
 
-Files:     .clang-format
-           .github/workflows/clang-format-check.yml
-           .gitignore
-           README-PHD2.txt.in
-           README.txt
-           WinLibs/CMOSDLL.dll
-           WinLibs/DICAMSDK.dll
-           WinLibs/SSPIAGCAM.dll
-           WinLibs/SSPIAGUSB_WIN.dll
-           WinLibs/SXUSB.dll
-           WinLibs/ShoestringGPUSB_DLL.dll
-           WinLibs/ShoestringLXUSB_DLL.dll
-           WinLibs/astroDLLGeneric.dll
-           WinLibs/astroDLLQHY5V.dll
-           WinLibs/astroDLLsspiag.dll
-           WinLibs/concrt140.dll
-           WinLibs/inpout32.dll
-           WinLibs/msvcp140.dll
-           WinLibs/msvcr120.dll
-           WinLibs/tbb.dll
-           WinLibs/vcomp140.dll
-           WinLibs/vcruntime140.dll
-           build/.gitignore
-           build/build-mac
-           build/build-win
-           build/build.cfg.sample
-           build/build_help.sh
-           build/build_help_hhk
-           build/build_help_pdf.sh
-           build/build_help_toc_html
-           build/dark_mover.vbs
-           build/get_phd_version
-           build/locales_compile.sh
-           build/locales_update.sh
-           build/locales_update_win.sh
-           build/make-release
-           build/unpack_altaircam_sdk.sh
-           build/unpack_moravian_sdk
-           build/unpack_playerone_sdk
-           build/unpack_qhy_sdk.sh
-           build/unpack_svb_libs
-           build/unpack_toupcam_sdk.sh
-           build/unpack_zwo_libs
-           cameras/ASICamera2.h
-           cameras/ASICamera2.lib
-           cameras/ArtemisHSCAPI.cpp
-           cameras/ArtemisHSCAPI.h
-           cameras/CMOSDLL.lib
-           cameras/CMOSDll.h
-           cameras/DICAMSDK.lib
-           cameras/DSCAMAPI.h
-           cameras/DsiDevice.h
-           cameras/FcApiUser.h
-           cameras/KWIQGuider/KWIQGuider.cpp
-           cameras/KWIQGuider/KWIQGuider.h
-           cameras/KWIQGuider/KWIQGuider_firmware.h
-           cameras/KWIQGuider/KWIQGuider_loader.cpp
-           cameras/KWIQGuider/KWIQGuider_priv.h
-           cameras/SBIGUDrv.lib
-           cameras/SVBCameraSDK.h
-           cameras/SVBCameraSDK.lib
-           cameras/SXUSB.lib
-           cameras/Sbigudrv.h
-           cameras/ShoestringGPUSB_DLL.lib
-           cameras/ShoestringLXUSB_DLL.lib
-           cameras/StarShootDLL.h
-           cameras/altaircam.lib
-           cameras/astroDLLQHY5V.h
-           cameras/astroDLLQHY5V.lib
-           cameras/inpout32.lib
-           cameras/moravian/include/gxeth.h
-           cameras/moravian/include/gxusb.h
-           cameras/moravian/win/lib/gXeth.dll
-           cameras/moravian/win/lib/gXeth.lib
-           cameras/moravian/win/lib/gXusb.dll
-           cameras/moravian/win/lib/gXusb.lib
-           cameras/playerone/include/PlayerOneCamera.h
-           cameras/playerone/linux/arm32/libPlayerOneCamera.so.3.7.1
-           cameras/playerone/linux/arm64/libPlayerOneCamera.so.3.7.1
-           cameras/playerone/linux/x64/libPlayerOneCamera.so.3.7.1
-           cameras/playerone/linux/x86/libPlayerOneCamera.so.3.7.1
-           cameras/playerone/mac/libPlayerOneCamera.dylib
-           cameras/playerone/win/PlayerOneCamera.dll
-           cameras/playerone/win/PlayerOneCamera.lib
-           cameras/qhyccd.h
-           cameras/qhyccd.lib
-           cameras/qhyccd_config.h
-           cameras/qhyccdcamdef.h
-           cameras/qhyccderr.h
-           cameras/qhyccdstruct.h
-           cameras/toupcam.lib
-           cmake_modules/FindINDI.cmake
-           contributions/MPI_IS_gaussian_process/doc/PredictivePEC_DevDoc.pdf
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/.gitignore
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/dataset01.csv
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/dataset02.csv
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/dataset03.csv
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/performance_dataset01.txt
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/performance_dataset02.txt
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/performance_dataset03.txt
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/performance_dataset04.txt
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/performance_dataset05.txt
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/performance_dataset06.txt
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/performance_dataset07.txt
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/performance_dataset08.txt
-           contributions/MPI_IS_gaussian_process/tools/analyze_data.py
-           contributions/MPI_IS_gaussian_process/tools/optimize_params.py
-           contributions/MPI_IS_gaussian_process/tools/plot_dec_data.py
-           contributions/MPI_IS_gaussian_process/tools/plot_gp_data.py
-           contributions/MPI_IS_gaussian_process/tools/plot_spectrum.py
-           doc/PHD_2.0_Architecture.docx
-           extra_frameworks/HID Utilities Source.zip
-           extra_frameworks/SBIGUDrv.framework.zip
-           extra_frameworks/fcCamFw.framework.zip
-           help/AO_graph.png
-           help/Adjust_Lock_Position.png
-           help/Advanced_AO.png
-           help/Advanced_algorithms.png
-           help/Advanced_calstep_calculator.png
-           help/Advanced_camera.png
-           help/Advanced_global.png
-           help/Advanced_guiding.png
-           help/Advanced_mount.png
-           help/Advanced_other.png
-           help/Advanced_other_Algo.png
-           help/Bad_Star_Cross_1.png
-           help/Calib_Review.png
-           help/Calib_Review_Backlash.png
-           help/Calib_Sanity.png
-           help/Calibration_Assistant_Confirm.png
-           help/Calibration_Assistant_Main.png
-           help/Calibration_Assistant_Sanity_1.png
-           help/Calibration_Assistant_Sanity_2.png
-           help/CometTrackingTool.png
-           help/Dark_Lib.png
-           help/DefectUI.png
-           help/Defect_Darks.png
-           help/GearDialog_AscomProps.png
-           help/GearDialog_AuxMount.png
-           help/GearDialog_Basic.png
-           help/GearDialog_Camera2.png
-           help/GearDialog_Extended.png
-           help/Gear_Aux_Dialog.png
-           help/Guider_Graph.png
-           help/Guiding_Assistant_BL_Large.png
-           help/Guiding_Assistant_BL_Small.png
-           help/Guiding_Assistant_Finish.png
-           help/Guiding_Assistant_Finish_NoBL.png
-           help/Guiding_Assistant_MeasuringBL.png
-           help/Guiding_Assistant_Start.png
-           help/Guiding_Assistant_Start_a.png
-           help/Log_Upload_1.png
-           help/Log_Upload_2.png
-           help/Main_Advanced_Settings.png
-           help/Main_Auto-select_Star.png
-           help/Main_Camera_Settings.png
-           help/Main_Connect_Equipment.png
-           help/Main_Exposure_Duration.png
-           help/Main_Gamma_Adjustment.png
-           help/Main_Guide.png
-           help/Main_Loop_Exposures.png
-           help/Main_Screen.png
-           help/Main_Status.png
-           help/Main_StatusIcons.png
-           help/Main_Stop.png
-           help/ManualGuide.png
-           help/Manual_mount.png
-           help/Manual_mount_drift.png
-           help/PHD2GuideHelp.hhp
-           help/Star_cross_tool.png
-           help/Star_profile.png
-           help/StatsWindow.png
-           help/Supplement_Backlash.png
-           help/Supplement_Example_PE.png
-           help/Supplement_RA_Gears.png
-           help/Supplemental_Graph_Seeing.png
-           help/Target_display.png
-           help/Tools_simulator.png
-           help/ZWO_BPP.png
-           help/ZWO_Branch_1.png
-           help/ZWO_Branch_2.png
-           help/ZWO_Darks.png
-           help/da_IMG01.png
-           help/da_IMG02.png
-           help/da_IMG03.png
-           help/da_IMG04.png
-           help/da_IMG05.png
-           help/da_IMG06.png
-           help/da_IMG07.png
-           help/da_IMG08.png
-           help/da_IMG09.png
-           help/da_IMG10.png
-           help/da_IMG11.png
-           help/pd_IMG01.png
-           help/pd_IMG02.png
-           help/spa_IMG01.png
-           help/spa_IMG01a.png
-           help/spa_IMG02.png
-           help/spa_IMG02a.png
-           help/spa_IMG03.png
-           help/spa_IMG04.png
-           help/spa_IMG04a.png
-           help/spa_IMG05.png
-           help/spa_IMG06.png
-           help/spa_IMG07.png
-           icons/AltArrow.xpm
-           icons/AzArrow.xpm
-           icons/PHD_OSX_icon.icns
-           icons/alert24.png
-           icons/alert24.png.h
-           icons/ao.xpm
-           icons/at_curs1.cur
-           icons/at_curs3.cur
-           icons/auto_select.png
-           icons/auto_select.png.h
-           icons/auto_select_disabled.png
-           icons/auto_select_disabled.png.h
-           icons/brain.png
-           icons/brain.png.h
-           icons/bullseye.cur
-           icons/cam2.ico
-           icons/cam2.xpm
-           icons/cam_setup.png
-           icons/cam_setup.png.h
-           icons/cam_setup_disabled.png
-           icons/cam_setup_disabled.png.h
-           icons/connect.png
-           icons/connect.png.h
-           icons/connect_disabled.png
-           icons/connect_disabled.png.h
-           icons/connected.png
-           icons/connected.png.h
-           icons/disconnected.png
-           icons/disconnected.png.h
-           icons/down_arrow.xpm
-           icons/down_arrow_bold.xpm
-           icons/guide.png
-           icons/guide.png.h
-           icons/guide_disabled.png
-           icons/guide_disabled.png.h
-           icons/help22.png
-           icons/help22.png.h
-           icons/loop.png
-           icons/loop.png.h
-           icons/loop_disabled.png
-           icons/loop_disabled.png.h
-           icons/phd2.ico
-           icons/phd2_128.png
-           icons/phd2_128.png.h
-           icons/phd2_16.png
-           icons/phd2_256.png
-           icons/phd2_32.png
-           icons/phd2_48.png
-           icons/phd2_48.png.h
-           icons/phd2_64.png
-           icons/phd2_64.png.h
-           icons/sb_arrow_down_16.png
-           icons/sb_arrow_down_16.png.h
-           icons/sb_arrow_left_16.png
-           icons/sb_arrow_left_16.png.h
-           icons/sb_arrow_right_16.png
-           icons/sb_arrow_right_16.png.h
-           icons/sb_arrow_up_16.png
-           icons/sb_arrow_up_16.png.h
-           icons/sb_led_green.png
-           icons/sb_led_green.png.h
-           icons/sb_led_red.png
-           icons/sb_led_red.png.h
-           icons/sb_led_yellow.png
-           icons/sb_led_yellow.png.h
-           icons/scope1.ico
-           icons/scope1.xpm
-           icons/select.png
-           icons/select.png.h
-           icons/setup.png
-           icons/setup.png.h
-           icons/stop.png
-           icons/stop.png.h
-           icons/stop_disabled.png
-           icons/stop_disabled.png.h
-           icons/transparent24.png
-           icons/transparent24.png.h
-           locale/ca_ES/wxstd.po
-           locale/cs_CZ/wxstd.po
-           locale/de_DE/wxstd.po
-           locale/es_ES/wxstd.po
-           locale/fr_FR/help/AO_graph.PNG
-           locale/fr_FR/help/Advanced_algorithms.png
-           locale/fr_FR/help/Advanced_calstep_calculator.PNG
-           locale/fr_FR/help/Advanced_camera.PNG
-           locale/fr_FR/help/Advanced_global.PNG
-           locale/fr_FR/help/Advanced_guiding.PNG
-           locale/fr_FR/help/Advanced_other.png
-           locale/fr_FR/help/Advanced_other_Algo.png
-           locale/fr_FR/help/Bad_Star_Cross_1.png
-           locale/fr_FR/help/Calib_Review.png
-           locale/fr_FR/help/Calib_Review_Backlash.png
-           locale/fr_FR/help/Calib_Sanity.png
-           locale/fr_FR/help/CometTrackingTool.png
-           locale/fr_FR/help/Dark_Lib.png
-           locale/fr_FR/help/DefectUI.png
-           locale/fr_FR/help/Defect_Darks.png
-           locale/fr_FR/help/GearDialog_Extended.png
-           locale/fr_FR/help/Gear_Aux_Dialog.png
-           locale/fr_FR/help/Gear_Dialog.png
-           locale/fr_FR/help/Guider_Graph.PNG
-           locale/fr_FR/help/Guiding_Assistant_BL_Large.png
-           locale/fr_FR/help/Guiding_Assistant_BL_Small.png
-           locale/fr_FR/help/Guiding_Assistant_Finish.png
-           locale/fr_FR/help/Guiding_Assistant_Finish_NoBL.png
-           locale/fr_FR/help/Guiding_Assistant_MeasuringBL.png
-           locale/fr_FR/help/Guiding_Assistant_Start.png
-           locale/fr_FR/help/Main_Screen.PNG
-           locale/fr_FR/help/ManualGuide.PNG
-           locale/fr_FR/help/PHD2GuideHelp.hhp
-           locale/fr_FR/help/Star_profile.PNG
-           locale/fr_FR/help/StatsWindow.png
-           locale/fr_FR/help/Target_display.PNG
-           locale/fr_FR/help/Tools_simulator.PNG
-           locale/fr_FR/wxstd.po
-           locale/it_IT/wxstd.po
-           locale/ja_JP/help/AO_graph.png
-           locale/ja_JP/help/Adjust_Lock_Position.png
-           locale/ja_JP/help/Advanced_AO.png
-           locale/ja_JP/help/Advanced_algorithms.png
-           locale/ja_JP/help/Advanced_calstep_calculator.png
-           locale/ja_JP/help/Advanced_camera.png
-           locale/ja_JP/help/Advanced_global.png
-           locale/ja_JP/help/Advanced_guiding.png
-           locale/ja_JP/help/Advanced_mount.png
-           locale/ja_JP/help/Advanced_other.png
-           locale/ja_JP/help/Advanced_other_Algo.png
-           locale/ja_JP/help/Bad_Star_Cross_1.png
-           locale/ja_JP/help/Calib_Review.png
-           locale/ja_JP/help/Calib_Review_Backlash.png
-           locale/ja_JP/help/Calib_Sanity.png
-           locale/ja_JP/help/CometTrackingTool.png
-           locale/ja_JP/help/Dark_Lib.png
-           locale/ja_JP/help/DefectUI.png
-           locale/ja_JP/help/Defect_Darks.png
-           locale/ja_JP/help/GearDialog_AscomProps.png
-           locale/ja_JP/help/GearDialog_AuxMount.png
-           locale/ja_JP/help/GearDialog_Basic.png
-           locale/ja_JP/help/GearDialog_Camera2.png
-           locale/ja_JP/help/GearDialog_Extended.png
-           locale/ja_JP/help/Gear_Aux_Dialog.png
-           locale/ja_JP/help/Guider_Graph.png
-           locale/ja_JP/help/Guiding_Assistant_BL_Large.png
-           locale/ja_JP/help/Guiding_Assistant_BL_Small.png
-           locale/ja_JP/help/Guiding_Assistant_Finish.png
-           locale/ja_JP/help/Guiding_Assistant_Finish_NoBL.png
-           locale/ja_JP/help/Guiding_Assistant_MeasuringBL.png
-           locale/ja_JP/help/Guiding_Assistant_Start.png
-           locale/ja_JP/help/Guiding_Assistant_Start_a.png
-           locale/ja_JP/help/Log_Upload_1.png
-           locale/ja_JP/help/Log_Upload_2.png
-           locale/ja_JP/help/Main_Screen.png
-           locale/ja_JP/help/Main_Status.png
-           locale/ja_JP/help/Main_StatusIcons.png
-           locale/ja_JP/help/ManualGuide.png
-           locale/ja_JP/help/Manual_mount.png
-           locale/ja_JP/help/Manual_mount_drift.png
-           locale/ja_JP/help/PHD2GuideHelp.hhp
-           locale/ja_JP/help/PHD2_files/Advanced_settings_files/Advanced_algorithms.png
-           locale/ja_JP/help/PHD2_files/Advanced_settings_files/Advanced_calstep_calculator.png
-           locale/ja_JP/help/PHD2_files/Advanced_settings_files/Advanced_camera.png
-           locale/ja_JP/help/PHD2_files/Advanced_settings_files/Advanced_global.png
-           locale/ja_JP/help/PHD2_files/Advanced_settings_files/Advanced_guiding.png
-           locale/ja_JP/help/PHD2_files/Advanced_settings_files/Advanced_other.png
-           locale/ja_JP/help/PHD2_files/Advanced_settings_files/Advanced_other_Algo.png
-           locale/ja_JP/help/PHD2_files/Advanced_settings_files/translate_24dp.png
-           locale/ja_JP/help/PHD2_files/Basic_use_files/GearDialog_AscomProps.png
-           locale/ja_JP/help/PHD2_files/Basic_use_files/GearDialog_AuxMount.png
-           locale/ja_JP/help/PHD2_files/Basic_use_files/GearDialog_Basic.png
-           locale/ja_JP/help/PHD2_files/Basic_use_files/GearDialog_Camera2.png
-           locale/ja_JP/help/PHD2_files/Basic_use_files/GearDialog_Extended.png
-           locale/ja_JP/help/PHD2_files/Basic_use_files/translate_24dp.png
-           locale/ja_JP/help/PHD2_files/Darks_BadPixel_Maps_files/Dark_Lib.png
-           locale/ja_JP/help/PHD2_files/Darks_BadPixel_Maps_files/DefectUI.png
-           locale/ja_JP/help/PHD2_files/Darks_BadPixel_Maps_files/Defect_Darks.png
-           locale/ja_JP/help/PHD2_files/Darks_BadPixel_Maps_files/translate_24dp.png
-           locale/ja_JP/help/PHD2_files/Glossary_files/translate_24dp.png
-           locale/ja_JP/help/PHD2_files/Guide_algorithms_files/translate_24dp.png
-           locale/ja_JP/help/PHD2_files/Introduction_files/translate_24dp.png
-           locale/ja_JP/help/PHD2_files/KeyboardShortcuts_files/translate_24dp.png
-           locale/ja_JP/help/PHD2_files/MainScreen_files/Main_Screen.png
-           locale/ja_JP/help/PHD2_files/MainScreen_files/Main_Status.png
-           locale/ja_JP/help/PHD2_files/MainScreen_files/translate_24dp.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Adjust_Lock_Position.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Calib_Review.png
-           locale/ja_JP/help/PHD2_files/Tools_files/CometTrackingTool.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Guiding_Assistant_BL_Large.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Guiding_Assistant_BL_Small.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Guiding_Assistant_Finish.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Guiding_Assistant_Finish_NoBL.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Guiding_Assistant_MeasuringBL.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Guiding_Assistant_Start.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Guiding_Assistant_Start_a.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Log_Upload_1.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Log_Upload_2.png
-           locale/ja_JP/help/PHD2_files/Tools_files/ManualGuide.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Manual_mount.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Manual_mount_drift.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Star_cross_tool.png
-           locale/ja_JP/help/PHD2_files/Tools_files/Tools_simulator.png
-           locale/ja_JP/help/PHD2_files/Tools_files/translate_24dp.png
-           locale/ja_JP/help/PHD2_files/Trouble_shooting_files/Bad_Star_Cross_1.png
-           locale/ja_JP/help/PHD2_files/Trouble_shooting_files/Calib_Review_Backlash.png
-           locale/ja_JP/help/PHD2_files/Trouble_shooting_files/Calib_Sanity.png
-           locale/ja_JP/help/PHD2_files/Trouble_shooting_files/translate_24dp.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/da_IMG01.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/da_IMG02.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/da_IMG03.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/da_IMG04.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/da_IMG05.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/da_IMG06.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/da_IMG07.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/da_IMG08.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/da_IMG09.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/da_IMG10.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/da_IMG11.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/pd_IMG01.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/pd_IMG02.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/spa_IMG01.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/spa_IMG01a.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/spa_IMG02.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/spa_IMG02a.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/spa_IMG03.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/spa_IMG04.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/spa_IMG04a.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/spa_IMG05.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/spa_IMG06.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/spa_IMG07.png
-           locale/ja_JP/help/PHD2_files/Tutorials_files/translate_24dp.png
-           locale/ja_JP/help/PHD2_files/Visualization_files/AO_graph.png
-           locale/ja_JP/help/PHD2_files/Visualization_files/Guider_Graph.png
-           locale/ja_JP/help/PHD2_files/Visualization_files/Star_profile.png
-           locale/ja_JP/help/PHD2_files/Visualization_files/StatsWindow.png
-           locale/ja_JP/help/PHD2_files/Visualization_files/Target_display.png
-           locale/ja_JP/help/PHD2_files/Visualization_files/translate_24dp.png
-           locale/ja_JP/help/Star_cross_tool.png
-           locale/ja_JP/help/Star_profile.png
-           locale/ja_JP/help/StatsWindow.png
-           locale/ja_JP/help/Target_display.png
-           locale/ja_JP/help/Tools_simulator.png
-           locale/ja_JP/help/da_IMG01.png
-           locale/ja_JP/help/da_IMG02.png
-           locale/ja_JP/help/da_IMG03.png
-           locale/ja_JP/help/da_IMG04.png
-           locale/ja_JP/help/da_IMG05.png
-           locale/ja_JP/help/da_IMG06.png
-           locale/ja_JP/help/da_IMG07.png
-           locale/ja_JP/help/da_IMG08.png
-           locale/ja_JP/help/da_IMG09.png
-           locale/ja_JP/help/da_IMG10.png
-           locale/ja_JP/help/da_IMG11.png
-           locale/ja_JP/help/pd_IMG01.png
-           locale/ja_JP/help/pd_IMG02.png
-           locale/ja_JP/help/spa_IMG01.png
-           locale/ja_JP/help/spa_IMG01a.png
-           locale/ja_JP/help/spa_IMG02.png
-           locale/ja_JP/help/spa_IMG02a.png
-           locale/ja_JP/help/spa_IMG03.png
-           locale/ja_JP/help/spa_IMG04.png
-           locale/ja_JP/help/spa_IMG04a.png
-           locale/ja_JP/help/spa_IMG05.png
-           locale/ja_JP/help/spa_IMG06.png
-           locale/ja_JP/help/spa_IMG07.png
-           locale/ja_JP/messages.po
-           locale/ja_JP/wxstd.po
-           locale/ko_KR/wxstd.po
-           locale/pl_PL/wxstd.po
-           locale/ru_RU/help/AO_graph.png
-           locale/ru_RU/help/Adjust_Lock_Position.png
-           locale/ru_RU/help/Advanced_AO.png
-           locale/ru_RU/help/Advanced_algorithms.png
-           locale/ru_RU/help/Advanced_calstep_calculator.png
-           locale/ru_RU/help/Advanced_camera.png
-           locale/ru_RU/help/Advanced_global.png
-           locale/ru_RU/help/Advanced_guiding.png
-           locale/ru_RU/help/Advanced_mount.png
-           locale/ru_RU/help/Advanced_other.png
-           locale/ru_RU/help/Advanced_other_Algo.png
-           locale/ru_RU/help/Bad_Star_Cross_1.png
-           locale/ru_RU/help/Calib_Review.png
-           locale/ru_RU/help/Calib_Review_Backlash.png
-           locale/ru_RU/help/Calib_Sanity.png
-           locale/ru_RU/help/CometTrackingTool.png
-           locale/ru_RU/help/Dark_Lib.png
-           locale/ru_RU/help/DefectUI.png
-           locale/ru_RU/help/Defect_Darks.png
-           locale/ru_RU/help/GearDialog_AscomProps.png
-           locale/ru_RU/help/GearDialog_AuxMount.png
-           locale/ru_RU/help/GearDialog_Basic.png
-           locale/ru_RU/help/GearDialog_Camera2.png
-           locale/ru_RU/help/GearDialog_Extended.png
-           locale/ru_RU/help/Gear_Aux_Dialog.png
-           locale/ru_RU/help/Guider_Graph.png
-           locale/ru_RU/help/Guiding_Assistant_BL_Large.png
-           locale/ru_RU/help/Guiding_Assistant_BL_Small.png
-           locale/ru_RU/help/Guiding_Assistant_Finish.png
-           locale/ru_RU/help/Guiding_Assistant_Finish_NoBL.png
-           locale/ru_RU/help/Guiding_Assistant_MeasuringBL.png
-           locale/ru_RU/help/Guiding_Assistant_Start.png
-           locale/ru_RU/help/Guiding_Assistant_Start_a.png
-           locale/ru_RU/help/Log_Upload_1.png
-           locale/ru_RU/help/Log_Upload_2.png
-           locale/ru_RU/help/Main_Screen.png
-           locale/ru_RU/help/Main_StatusIcons.png
-           locale/ru_RU/help/ManualGuide.png
-           locale/ru_RU/help/Manual_mount.png
-           locale/ru_RU/help/Manual_mount_drift.png
-           locale/ru_RU/help/PHD2GuideHelp.hhp
-           locale/ru_RU/help/Star_cross_1.png
-           locale/ru_RU/help/Star_cross_tool.png
-           locale/ru_RU/help/Star_profile.png
-           locale/ru_RU/help/StatsWindow.png
-           locale/ru_RU/help/Stats_window.PNG
-           locale/ru_RU/help/Target_display.png
-           locale/ru_RU/help/Tools_simulator.png
-           locale/ru_RU/help/da_IMG01.png
-           locale/ru_RU/help/da_IMG02.png
-           locale/ru_RU/help/da_IMG03.png
-           locale/ru_RU/help/da_IMG04.png
-           locale/ru_RU/help/da_IMG05.png
-           locale/ru_RU/help/da_IMG06.png
-           locale/ru_RU/help/da_IMG07.png
-           locale/ru_RU/help/da_IMG08.png
-           locale/ru_RU/help/da_IMG09.png
-           locale/ru_RU/help/da_IMG10.png
-           locale/ru_RU/help/da_IMG11.png
-           locale/ru_RU/help/pd_IMG01.png
-           locale/ru_RU/help/pd_IMG02.png
-           locale/ru_RU/help/spa_IMG01.png
-           locale/ru_RU/help/spa_IMG01a.png
-           locale/ru_RU/help/spa_IMG02.png
-           locale/ru_RU/help/spa_IMG02a.png
-           locale/ru_RU/help/spa_IMG03.png
-           locale/ru_RU/help/spa_IMG04.png
-           locale/ru_RU/help/spa_IMG04a.png
-           locale/ru_RU/help/spa_IMG05.png
-           locale/ru_RU/help/spa_IMG06.png
-           locale/ru_RU/help/spa_IMG07.png
-           locale/ru_RU/wxstd.po
-           locale/zh_TW/help/AO_graph.png
-           locale/zh_TW/help/Advanced_AO.png
-           locale/zh_TW/help/Advanced_algorithms.png
-           locale/zh_TW/help/Advanced_calstep_calculator.png
-           locale/zh_TW/help/Advanced_camera.png
-           locale/zh_TW/help/Advanced_global.png
-           locale/zh_TW/help/Advanced_guiding.png
-           locale/zh_TW/help/Advanced_mount.png
-           locale/zh_TW/help/Advanced_other.png
-           locale/zh_TW/help/Advanced_other_Algo.png
-           locale/zh_TW/help/Bad_Star_Cross_1.png
-           locale/zh_TW/help/Calib_Review.png
-           locale/zh_TW/help/Calib_Review_Backlash.png
-           locale/zh_TW/help/Calib_Sanity.png
-           locale/zh_TW/help/CometTrackingTool.png
-           locale/zh_TW/help/Dark_Lib.png
-           locale/zh_TW/help/DefectUI.png
-           locale/zh_TW/help/Defect_Darks.png
-           locale/zh_TW/help/GearDialog_Basic.png
-           locale/zh_TW/help/GearDialog_Extended.png
-           locale/zh_TW/help/Gear_Aux_Dialog.png
-           locale/zh_TW/help/Guider_Graph.png
-           locale/zh_TW/help/Guiding_Assistant_BL_Large.png
-           locale/zh_TW/help/Guiding_Assistant_BL_Small.png
-           locale/zh_TW/help/Guiding_Assistant_Finish.png
-           locale/zh_TW/help/Guiding_Assistant_Finish_NoBL.png
-           locale/zh_TW/help/Guiding_Assistant_MeasuringBL.png
-           locale/zh_TW/help/Guiding_Assistant_Start.png
-           locale/zh_TW/help/Main_Screen.png
-           locale/zh_TW/help/ManualGuide.png
-           locale/zh_TW/help/PHD2GuideHelp.hhp
-           locale/zh_TW/help/Star_profile.png
-           locale/zh_TW/help/StatsWindow.png
-           locale/zh_TW/help/Target_display.png
-           locale/zh_TW/help/Tools_simulator.png
-           phd.rc
-           phd2.desktop
-           phd2.iss.in
-           phd2.sh.in
-           pre-commit.py
-           run_cmake-osx
-           run_cmake.bat
-           run_phd2_macos
-           savetest.fit
-           savetest2.fit
-           simimage.fit
-           src/guider_multistar.cpp
-           src/wxled.cpp
-           src/wxled.h
-           thirdparty/MallincamGuider-OSX-dylib-source.zip
-           thirdparty/VidCapture/Source/CVCommon/CVRes.h
-           thirdparty/VidCapture/Source/CVCommon/CVResDll.h
-           thirdparty/VidCapture/Source/CVCommon/CVResFile.h
-           thirdparty/VidCapture/Source/CVCommon/CVResImage.h
-           thirdparty/VidCapture/Source/CVCommon/CVResVidCap.h
-           thirdparty/VidCapture/Source/VidCapture/CVDShowUtil.cpp
-           thirdparty/VidCapture/Source/VidCapture/CVDShowUtil.h
-           thirdparty/VidCapture/Source/VidCapture/VidCapture.h
-           thirdparty/VidCapture/Source/VidCapture/qedit.h
-           thirdparty/VidCapture/VidCapture_Install.nsi
-           thirdparty/frameworks/SBIGUDrv.framework/Versions/A/Headers/lpardrv.h
-           thirdparty/frameworks/SBIGUDrv.framework/Versions/A/Resources/InfoPlist.strings
-           thirdparty/frameworks/SBIGUDrv.framework/Versions/A/SBIGUDrv
-           thirdparty/gettext-0.14.4-dep.zip
-           thirdparty/include/libdc1394-2.2.2/config.h
-           thirdparty/include/libusb-1.0.21/config.h
-           thirdparty/libusb-1.0.21.tar.bz2
-           thirdparty/openssag/Makefile.am
-           thirdparty/openssag/README.md
-           thirdparty/openssag/autogen.sh
-           thirdparty/openssag/configure.ac
-           thirdparty/openssag/firmware/Vend_Ax.hex
-           thirdparty/openssag/firmware/bootloader.hex
-           thirdparty/openssag/firmware/eeprom.hex
-           thirdparty/openssag/firmware/firmware.hex
-           thirdparty/openssag/scripts/hex2header
-           thirdparty/openssag/scripts/traffic2hex
-           thirdparty/openssag/src/Makefile.am
-           thirdparty/openssag/src/commandline/Makefile.am
-           thirdparty/openssag/usbtraffic/bootloader.txt
-           thirdparty/openssag/usbtraffic/capture.txt
-           thirdparty/openssag/usbtraffic/connect.txt
-           thirdparty/openssag/usbtraffic/firmware.txt
-           upload.cmd
-           upload.sh
-           xhair.xpm
-Copyright: __NO_COPYRIGHT_NOR_LICENSE__
-License:   __NO_COPYRIGHT_NOR_LICENSE__
-
-Files:     cameras/_SSAGIF.h
-           src/Refine_DefMap.cpp
-           src/Refine_DefMap.h
-           src/about_dialog.cpp
-           src/about_dialog.h
-           src/advanced_dialog.cpp
-           src/advanced_dialog.h
-           src/cam_INovaPLC.cpp
-           src/cam_INovaPLC.h
-           src/cam_KWIQGuider.cpp
-           src/cam_KWIQGuider.h
-           src/cam_LELXUSBWebcam.cpp
-           src/cam_LELXUSBWebcam.h
-           src/cam_LEParallelWebcam.cpp
-           src/cam_LEParallelWebcam.h
-           src/cam_LESerialWebcam.cpp
-           src/cam_LESerialWebcam.h
-           src/cam_LEwebcam.cpp
-           src/cam_MeadeDSI.cpp
-           src/cam_NebSBIG.cpp
-           src/cam_NebSBIG.h
-           src/cam_StarShootDSCI.cpp
-           src/cam_StarShootDSCI.h
-           src/cam_atik16.cpp
-           src/cam_atik16.h
-           src/cam_firewire.h
-           src/cam_firewire_IC.cpp
-           src/cam_firewire_OSX.cpp
-           src/cam_indi.cpp
-           src/cam_opencv.cpp
-           src/cam_opencv.h
-           src/cam_openssag.cpp
-           src/cam_openssag.h
-           src/cam_qguide.cpp
-           src/cam_qguide.h
-           src/cam_qhy5.cpp
-           src/cam_qhy5.h
-           src/cam_sbig.cpp
-           src/cam_sbig.h
-           src/cam_sspiag.cpp
-           src/cam_sspiag.h
-           src/cam_starfish.cpp
-           src/cam_starfish.h
-           src/cam_vfw.cpp
-           src/cam_vfw.h
-           src/cam_zwo.cpp
-           src/cam_zwo.h
-           src/camera.h
-           src/cameras.h
-           src/comdispatch.cpp
-           src/comdispatch.h
-           src/comet_tool.cpp
-           src/comet_tool.h
-           src/configdialog.cpp
-           src/configdialog.h
-           src/confirm_dialog.cpp
-           src/confirm_dialog.h
-           src/drift_tool.cpp
-           src/drift_tool.h
-           src/eegg.cpp
-           src/event_server.cpp
-           src/event_server.h
-           src/graph.h
-           src/guider.cpp
-           src/guiding_assistant.cpp
-           src/guiding_assistant.h
-           src/image_math.cpp
-           src/image_math.h
-           src/myframe.cpp
-           src/myframe.h
-           src/myframe_events.cpp
-           src/nudge_lock.cpp
-           src/phd.cpp
-           src/phd.h
-           src/phdconfig.cpp
-           src/phdconfig.h
-           src/phdcontrol.cpp
-           src/phdcontrol.h
-           src/rotator.cpp
-           src/rotator.h
-           src/rotator_ascom.cpp
-           src/rotator_ascom.h
-           src/rotators.h
-           src/runinbg.cpp
-           src/runinbg.h
-           src/scope.cpp
-           src/scope_GC_USBST4.cpp
-           src/scope_GC_USBST4.h
-           src/scope_eqmac.cpp
-           src/scope_equinox.cpp
-           src/scope_gpint.cpp
-           src/scope_gpusb.cpp
-           src/scope_indi.cpp
-           src/scope_indi.h
-           src/scope_voyager.cpp
-           src/scopes.h
-           src/serialport_mac.cpp
-           src/serialport_mac.h
-           src/socket_server.cpp
-           src/socket_server.h
-           src/statswindow.cpp
-           src/statswindow.h
-           src/testguide.cpp
-           src/testguide.h
-           src/usImage.cpp
-           src/usImage.h
-           thirdparty/openssag/phd/cam_openssag.cpp
-           thirdparty/openssag/phd/cam_openssag.h
-Copyright: 2006-2010 Craig Stark. Refactored  Bret McKee
-           2006-2013 Craig Stark.
-           2009 Geoffrey Hausheer
-           2012 Bret McKee
-           2013 Andy Galasso.
-           2013 Bret McKee.
-           2013 Craig Stark. Ported to OpenCV  Bret McKee.
-           2013 Craig Stark. Ported to PHD2  Bret McKee.
-           2013 Craig Stark. Ported to opencv  Bret McKee.
-           2013 Sylvain Girard.
-           2013-2020 Andy Galasso
-           2014 Bruce Waddington
-           2014 Patrick Chevalley
-           2014 Robin Glover
-           2014 Robin Glover.
-           2015 Andy Galasso and Bruce Waddington
-           2015-2024 openphdguiding.org
-License:   BSD-3-Clause
+Files:     *
+Copyright: 2013-2019, Open PHD Guiding development team
+           2014-2015, Max Planck Society
+License: BSD-3-clause
  This source code is distributed under the following "BSD" license
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -791,150 +34,99 @@ License:   BSD-3-Clause
  On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
  License can be found in `/usr/share/common-licenses/BSD'.
 
-Files:     src/aui_controls.cpp
-           src/aui_controls.h
-           src/backlash_comp.cpp
-           src/backlash_comp.h
-           src/calibration_assistant.cpp
-           src/calibration_assistant.h
-           src/calreview_dialog.cpp
-           src/calreview_dialog.h
-           src/calstep_dialog.cpp
-           src/calstep_dialog.h
-           src/camcal_import_dialog.h
-           src/darks_dialog.cpp
-           src/darks_dialog.h
-           src/debuglog.cpp
-           src/debuglog.h
-           src/guiders.h
-           src/guiding_stats.cpp
-           src/guiding_stats.h
-           src/guidinglog.cpp
-           src/guidinglog.h
-           src/logger.cpp
-           src/logger.h
-           src/manualcal_dialog.cpp
-           src/manualcal_dialog.h
-           src/messagebox_proxy.cpp
-           src/messagebox_proxy.h
-           src/mount.cpp
-           src/mount.h
-           src/nudge_lock.h
-           src/onboard_st4.cpp
-           src/onboard_st4.h
-           src/parallelport.cpp
-           src/parallelport.h
-           src/parallelport_win32.cpp
-           src/parallelport_win32.h
-           src/parallelports.h
-           src/point.h
-           src/profile_wizard.cpp
-           src/profile_wizard.h
-           src/scope.h
-           src/scope_eqmac.h
-           src/scope_equinox.h
-           src/scope_gpint.h
-           src/scope_gpusb.h
-           src/scope_onboard_st4.cpp
-           src/scope_onboard_st4.h
-           src/scope_oncamera.cpp
-           src/scope_oncamera.h
-           src/scope_onstepguider.cpp
-           src/scope_onstepguider.h
-           src/scope_voyager.h
-           src/star.cpp
-           src/star.h
-           src/starcross_test.cpp
-           src/starcross_test.h
-           src/worker_thread.cpp
-           src/worker_thread.h
-Copyright: 2006-2010 Craig Stark.
-           2012 Craig Stark
-           2012-2013 Bret McKee
-           2013 Sylvain Girard
-           2013-2023 Bruce Waddington
-           2014 Andy Galasso
-           2015-2017 Bruce Waddington and Andy Galasso
-License:   __UNKNOWN__
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Bret McKee, Dad Dog Development,
- Craig Stark, Stark Labs nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
+Files:     debian/*
+Copyright: Matteo Piscitelli <matteo@matteopiscitelli.it>
+License:   GPL-3.0+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or
+ (at your option) any later version.
  .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this package; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-3'.
 
-Files:     cameras/altaircam_sdk.h
-           src/cam_altair.cpp
-           src/cam_altair.h
-           src/cam_ascom.h
-           src/cam_indi.h
-           src/cam_ioptron.cpp
-           src/cam_ioptron.h
-           src/cam_moravian.cpp
-           src/cam_moravian.h
-           src/cam_ogma.cpp
-           src/cam_ogma.h
-           src/cam_playerone.cpp
-           src/cam_playerone.h
-           src/cam_qhy.cpp
-           src/cam_qhy.h
-           src/cam_skyraider.cpp
-           src/cam_skyraider.h
-           src/cam_svb.cpp
-           src/cam_svb.h
-           src/cam_sxv.cpp
-           src/cam_sxv.h
-           src/cam_touptek.cpp
-           src/cam_touptek.h
-           src/cam_wdm.h
-           src/gear_simulator.cpp
-           src/gear_simulator.h
-           src/guide_algorithm_zfilter.cpp
-           src/guide_algorithm_zfilter.h
-           src/phdupdate.cpp
-           src/phdupdate.h
-           src/pierflip_tool.cpp
-           src/pierflip_tool.h
-           src/polardrift_tool.h
-           src/polardrift_toolwin.cpp
-           src/polardrift_toolwin.h
-           src/rotator_indi.cpp
-           src/rotator_indi.h
-           src/scope_manual_pointing.cpp
-           src/scope_manual_pointing.h
-           src/staticpa_tool.h
-           src/staticpa_toolwin.cpp
-           src/staticpa_toolwin.h
-           src/stepguider_sxao.h
-           src/zfilterfactory.h
-Copyright: 2006-2010 Craig Stark
-           2013 Bret McKee
-           2014 Robin Glover
-           2014 Robin Glover.
-           2015-2020 Andy Galasso
-           2015-2020 Andy Galasso.
-           2016-2024 openphdguiding.org
-           2017-2018 Ken Self
-           2024 PHD2 Developers
-License:   BSD-3-Clause
+Files: advanced_dialog.cpp
+ advanced_dialog.h
+ cam_INovaPLC.cpp
+ cam_INovaPLC.h
+ cam_KWIQGuider.cpp
+ cam_KWIQGuider.h
+ cam_MeadeDSI.cpp
+ cam_MeadeDSI.h
+ cam_NebSBIG.cpp
+ cam_NebSBIG.h
+ cam_OSPL130.h
+ cam_SAC42.cpp
+ cam_SAC42.h
+ cam_SACGuide.cpp
+ cam_SACGuide.h
+ cam_StarShootDSCI.cpp
+ cam_StarShootDSCI.h
+ cam_atik16.cpp
+ cam_atik16.h
+ cam_firewire.h
+ cam_firewire_IC.cpp
+ cam_firewire_OSX.cpp
+ cam_openssag.cpp
+ cam_openssag.h
+ cam_qguide.cpp
+ cam_qguide.h
+ cam_qhy5.cpp
+ cam_qhy5.h
+ cam_sbig.cpp
+ cam_sbig.h
+ cam_sbigrotator.h
+ cam_ssag.cpp
+ cam_sspiag.cpp
+ cam_sspiag.h
+ cam_starfish.cpp
+ cam_starfish.h
+ cam_vfw.cpp
+ cam_vfw.h
+ camera.cpp
+ camera.h
+ cameras.h
+ eegg.cpp
+ graph.h
+ image_math.cpp
+ myframe_events.cpp
+ phd.cpp
+ phd.h
+ scope.cpp
+ scope_GC_USBST4.cpp
+ scope_GC_USBST4.h
+ scope_eqmac.cpp
+ scope_equinox.cpp
+ scope_gpint.cpp
+ scope_gpusb.cpp
+ scopes.h
+ serialport_mac.cpp
+ serialport_mac.h
+ socket_server.cpp
+ socket_server.h
+ testguide.cpp
+ testguide.h
+ usImage.cpp
+ usImage.h
+Copyright: 2006-2009, Craig Stark.
+  2006-2010, Craig Stark.
+  2007-2009, Craig Stark.
+  2007-2010, Craig Stark.
+  2008-2010, Craig Stark.
+  2009, Craig Stark.
+  2009-2010, Craig Stark.
+  2012, Craig Stark.
+  2013, Craig Stark.
+License: BSD-3-clause
  This source code is distributed under the following "BSD" license
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -943,7 +135,7 @@ License:   BSD-3-Clause
  Redistributions in binary form must reproduce the above copyright notice,
  this list of conditions and the following disclaimer in the
  documentation and/or other materials provided with the distribution.
- Neither the name of openphdguiding.org nor the names of its
+ Neither the name of Craig Stark, Stark Labs nor the names of its
  contributors may be used to endorse or promote products derived from
  this software without specific prior written permission.
  .
@@ -962,70 +154,61 @@ License:   BSD-3-Clause
  On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
  License can be found in `/usr/share/common-licenses/BSD'.
 
-Files:     cameras/DSDefine.h
-           cameras/ShoestringGPUSB_DLL.h
-           cameras/ShoestringLXUSB_DLL.h
-           cameras/altaircam.h
-           cameras/toupcam.h
-           contributions/MPI_IS_gaussian_process/README.md
-           locale/ja_JP/help/PHD2_files/Advanced_settings_files/translateelement.css
-           locale/ja_JP/help/PHD2_files/Basic_use_files/translateelement.css
-           locale/ja_JP/help/PHD2_files/Darks_BadPixel_Maps_files/translateelement.css
-           locale/ja_JP/help/PHD2_files/Glossary_files/translateelement.css
-           locale/ja_JP/help/PHD2_files/Guide_algorithms_files/translateelement.css
-           locale/ja_JP/help/PHD2_files/Introduction_files/translateelement.css
-           locale/ja_JP/help/PHD2_files/KeyboardShortcuts_files/translateelement.css
-           locale/ja_JP/help/PHD2_files/MainScreen_files/translateelement.css
-           locale/ja_JP/help/PHD2_files/Tools_files/translateelement.css
-           locale/ja_JP/help/PHD2_files/Trouble_shooting_files/translateelement.css
-           locale/ja_JP/help/PHD2_files/Tutorials_files/translateelement.css
-           locale/ja_JP/help/PHD2_files/Visualization_files/translateelement.css
-           src/cam_OSPL130.cpp
-           src/guider_multistar.h
-           thirdparty/VidCapture/Source/VidCapture/VidCapture_Docs.h
-           thirdparty/frameworks/SBIGUDrv.framework/Versions/A/Headers/sbigudrv.h
-           thirdparty/openssag/LICENSE.txt
-           thirdparty/openssag/src/commandline/ssag.cpp
-           thirdparty/openssag/src/firmware.h
-           thirdparty/openssag/src/loader.cpp
-           thirdparty/openssag/src/openssag.cpp
-           thirdparty/openssag/src/openssag.h
-           thirdparty/openssag/src/openssag_priv.h
-Copyright: 1995-2012 Santa Barbara Instrument Group
-           1998-2012 d-image Corporation. Company proprietary.
-           2005 Shoestring Astronomy www.ShoestringAstronomy.com
-           2006-2010 Craig Stark.
-           2011 Eric Holmes, Orion Telescopes & Binoculars eric@ejholmes.net
-           2011 Eric J. Holmes, Orion Telescopes & Binoculars
-           2019 Google Inc.
-           &copy; 2003-2004
-           and Licensing
-           arm64: GLIBC 2.17 or above; built  toolchain aarch64-linux-gnu (version 5.4.0) (d) armhf: GLIBC 2.8 or above; built  toolchain arm-linux-gnueabihf (version 5.4.0) (e) armel: GLIBC 2.8 or above; built  toolchain arm-linux-gnueabi (version 5.4.0)
-License:   __NO_LICENSE__
-
-Files:     locale/ar_LY/messages.po
-           locale/ca_ES/messages.po
-           locale/cs_CZ/messages.po
-           locale/de_DE/messages.po
-           locale/es_ES/messages.po
-           locale/gl_ES/messages.po
-           locale/it_IT/messages.po
-           locale/ko_KR/messages.po
-           locale/nb_NO/messages.po
-           locale/pl_PL/messages.po
-           locale/pt_BR/messages.po
-           locale/ro_RO/messages.po
-           locale/zh_CN/messages.po
-           locale/zh_TW/messages.po
-           src/graph-stepguider.cpp
-           src/graph-stepguider.h
-           src/star_profile.cpp
-           src/star_profile.h
-           src/target.cpp
-           src/target.h
-Copyright: 2013 Bret McKee
-           2013 Sylvain Girard
-License:   __UNKNOWN__
+Files: cam_sbigrotator.cpp
+ configdialog.cpp
+ configdialog.h
+ debuglog.cpp
+ debuglog.h
+ gear_dialog.cpp
+ gear_dialog.h
+ graph-stepguider.cpp
+ graph-stepguider.h
+ guider.cpp
+ guiders.h
+ guidinglog.cpp
+ guidinglog.h
+ messagebox_proxy.cpp
+ messagebox_proxy.h
+ mount.cpp
+ mount.h
+ onboard_st4.cpp
+ onboard_st4.h
+ parallelport.cpp
+ parallelport.h
+ parallelport_win32.cpp
+ parallelport_win32.h
+ parallelports.h
+ point.h
+ precompiled_header.cpp
+ scope.h
+ scope_equinox.h
+ scope_gpint.h
+ scope_gpusb.h
+ scope_onboard_st4.cpp
+ scope_onboard_st4.h
+ scope_oncamera.cpp
+ scope_oncamera.h
+ scope_onstepguider.cpp
+ scope_onstepguider.h
+ scope_voyager.h
+ serialport.cpp
+ serialport.h
+ serialport_loopback.cpp
+ serialport_loopback.h
+ serialport_win32.cpp
+ serialport_win32.h
+ serialports.h
+ stepguider.cpp
+ stepguider.h
+ stepguider_sxao.cpp
+ stepguider_sxao.h
+ stepguiders.h
+ worker_thread.cpp
+ worker_thread.h
+Copyright: 2012, Bret McKee
+  2012-2013, Bret McKee
+  2013, Bret McKee
+License: BSD-3-clause
  This source code is distributed under the following "BSD" license
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -1034,336 +217,7 @@ License:   __UNKNOWN__
  Redistributions in binary form must reproduce the above copyright notice,
  this list of conditions and the following disclaimer in the
  documentation and/or other materials provided with the distribution.
- Neither the name of Bret McKee, Dad Dog Development Ltd, nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
-
-Files:     thirdparty/VidCapture/License.txt
-           thirdparty/VidCapture/Source/CVCommon/CVImageStructs.h
-           thirdparty/VidCapture/Source/VidCapture/CVFile.cpp
-           thirdparty/VidCapture/Source/VidCapture/CVFile.h
-           thirdparty/VidCapture/Source/VidCapture/CVImage.cpp
-           thirdparty/VidCapture/Source/VidCapture/CVImage.h
-           thirdparty/VidCapture/Source/VidCapture/CVImageGrey.cpp
-           thirdparty/VidCapture/Source/VidCapture/CVImageGrey.h
-           thirdparty/VidCapture/Source/VidCapture/CVImageRGB24.cpp
-           thirdparty/VidCapture/Source/VidCapture/CVImageRGB24.h
-           thirdparty/VidCapture/Source/VidCapture/CVImageRGBFloat.cpp
-           thirdparty/VidCapture/Source/VidCapture/CVImageRGBFloat.h
-           thirdparty/VidCapture/Source/VidCapture/CVPlatform.h
-           thirdparty/VidCapture/Source/VidCapture/CVPlatformWin32.cpp
-           thirdparty/VidCapture/Source/VidCapture/CVTrace.h
-           thirdparty/VidCapture/Source/VidCapture/CVTraceWin32.cpp
-           thirdparty/VidCapture/Source/VidCapture/CVUtil.h
-           thirdparty/VidCapture/Source/VidCapture/CVVidCapture.cpp
-           thirdparty/VidCapture/Source/VidCapture/CVVidCaptureDSWin32.cpp
-           thirdparty/VidCapture/Source/VidCapture/CVVidCaptureDSWin32.h
-Copyright: 2003-2004 Michael Ellison (mike@codevis.com)
-License:   __UNKNOWN__
- You may use this software in source and/or binary form, with or without
- modification, for commercial or non-commercial purposes, provided that
- you comply with the following conditions:
- .
- * Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- .
- * Redistributions of modified source must be clearly marked as modified,
- and due notice must be placed in the modified source indicating the
- type of modification(s) and the name(s) of the person(s) performing
- said modification(s).
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
- TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
- PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-Files:     src/guide_algorithm.h
-           src/guide_algorithm_hysteresis.cpp
-           src/guide_algorithm_hysteresis.h
-           src/guide_algorithm_identity.cpp
-           src/guide_algorithm_identity.h
-           src/guide_algorithm_lowpass.cpp
-           src/guide_algorithm_lowpass.h
-           src/guide_algorithm_lowpass2.cpp
-           src/guide_algorithm_lowpass2.h
-           src/guide_algorithm_resistswitch.cpp
-           src/guide_algorithm_resistswitch.h
-           src/guide_algorithms.h
-           src/guider.h
-Copyright: 2012 Bret McKee
-License:   __UNKNOWN__
- Based upon work by Craig Stark.
- Copyright (c) 2006-2010 Craig Stark.
- .
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Bret McKee, Dad Dog Development,
- Craig Stark, Stark Labs nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
-
-Files:     src/serialport.cpp
-           src/serialport.h
-           src/serialport_loopback.cpp
-           src/serialport_loopback.h
-           src/serialport_win32.cpp
-           src/serialport_win32.h
-           src/serialports.h
-           src/stepguider.cpp
-           src/stepguider.h
-           src/stepguider_sxao.cpp
-           src/stepguiders.h
-Copyright: 2013 Bret McKee
-License:   __UNKNOWN__
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Bret McKee, Dad Dog Development, nor the names of its
- Craig Stark, Stark Labs nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
-
-Files:     CMakeLists.txt
-           cmake_modules/PHD2BuildDoc.cmake
-           cmake_modules/PHD2GenerateDocScript.cmake
-           cmake_modules/PHD2Packaging.cmake
-           cmake_modules/PHD2Removegettextwarning.cmake
-           cmake_modules/compiler_options.cmake
-           thirdparty/thirdparty.cmake
-Copyright: 2014-2017 Max Planck Society.
-License:   BSD-3-Clause
- Redistribution and use in source and binary forms, with or without modification,
- are permitted provided that the following conditions are met:
- .
- 1. Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- .
- 2. Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the documentation
- and/or other materials provided with the distribution.
- .
- 3. Neither the name of the copyright holder nor the names of its contributors
- may be used to endorse or promote products derived from this software without
- specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
- BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- OF THE POSSIBILITY OF SUCH DAMAGE.
- .
- File created by Raffi Enficiaud
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     src/circbuf.h
-           src/fitsiowrap.cpp
-           src/fitsiowrap.h
-           src/optionsbutton.cpp
-           src/optionsbutton.h
-Copyright: 2013-2014 Andy Galasso
-License:   __UNKNOWN__
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Craig Stark, Stark Labs,
- Bret McKee, Dad Dog Development, Ltd, nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
-
-Files:     help/Star_cross_1.png
-           locale/fr_FR/help/Star_cross_1.png
-           locale/ja_JP/help/PHD2_files/Trouble_shooting_files/Star_cross_1.png
-           locale/ja_JP/help/Star_cross_1.png
-           locale/zh_TW/help/Star_cross_1.png
-Copyright: __NO_COPYRIGHT__ in: help/Star_cross_1.png
-           __NO_COPYRIGHT__ in: locale/fr_FR/help/Star_cross_1.png
-           __NO_COPYRIGHT__ in: locale/ja_JP/help/PHD2_files/Trouble_shooting_files/Star_cross_1.png
-           __NO_COPYRIGHT__ in: locale/ja_JP/help/Star_cross_1.png
-           __NO_COPYRIGHT__ in: locale/zh_TW/help/Star_cross_1.png
-License:   __UNKNOWN__
- _MANY_NON_ASCII_(27chars. over 33chars.) starting with: ÐTÐvÌ¿Ü<»»ëö÷÷¿ÿýw(àÂ³'À¶è
- _MANY_NON_ASCII_(102chars. over 171chars.) starting with: âjß|õC,+b3í4ÌÕ*ÚoãÔnZá°Ók»äh>ÝLãVÒûû%Ol¡1*¶vM;zxÜ«';
-
-Files:     locale/ar_LY/wxstd.po
-           locale/uk_UA/wxstd.po
-           locale/zh_CN/wxstd.po
-           locale/zh_TW/wxstd.po
-Copyright: 2005 Free Software Foundation, Inc.
-           2010 wxWidgets
-           __NO_COPYRIGHT__ in: locale/uk_UA/wxstd.po
-License:   _SAME_
- This file is distributed under the same license as the wxWidgets package.
-
-Files:     contributions/MPI_IS_gaussian_process/src/gaussian_process_guider.cpp
-           contributions/MPI_IS_gaussian_process/src/gaussian_process_guider.h
-           src/guide_algorithm_gaussian_process.cpp
-           src/guide_algorithm_gaussian_process.h
-Copyright: __NO_COPYRIGHT__ in: contributions/MPI_IS_gaussian_process/src/gaussian_process_guider.cpp
-           __NO_COPYRIGHT__ in: contributions/MPI_IS_gaussian_process/src/gaussian_process_guider.h
-           __NO_COPYRIGHT__ in: src/guide_algorithm_gaussian_process.cpp
-           __NO_COPYRIGHT__ in: src/guide_algorithm_gaussian_process.h
-License:   __UNKNOWN__
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Bret McKee, Dad Dog Development, nor the names of its
- Craig Stark, Stark Labs nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
-
-Files:     cmake_modules/FindCFITSIO.cmake
-           cmake_modules/FindNova.cmake
-           cmake_modules/FindZWO.cmake
-Copyright: 2006 Jasem Mutlaq <mutlaqja@ikarustech.com> Based on FindLibfacile  Carsten Niehaus, <cniehaus@gmx.de>
-License:   __UNKNOWN__
- Redistribution and use is allowed according to the terms of the BSD license.
- For details see the accompanying COPYING-CMAKE-SCRIPTS file.
-
-Files:     contributions/MPI_IS_gaussian_process/tests/gaussian_process/gaussian_process_test.cpp
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/gp_guider_test.cpp
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/guide_performance_test.cpp
-Copyright: 2014-2017 Max Planck Society.
-License:   BSD-3-Clause
- Redistribution and use in source and binary forms, with or without modification,
- are permitted provided that the following conditions are met:
- .
- 1. Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- .
- 2. Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the documentation
- and/or other materials provided with the distribution.
- .
- 3. Neither the name of the copyright holder nor the names of its contributors
- may be used to endorse or promote products derived from this software without
- specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
- BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- OF THE POSSIBILITY OF SUCH DAMAGE.
- .
- Created by Edgar Klenske <edgar.klenske@tuebingen.mpg.de>
- .
- Provides the test cases for the Gaussian Process functionality.
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     src/serialport_posix.cpp
-           src/serialport_posix.h
-           src/stepguider_sxao_indi.cpp
-Copyright: 2016 Hans Lambermont
-License:   BSD-3-Clause
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name Craig Stark, Stark Labs nor the names of its
+ Neither the name of Craig Stark, Stark Labs nor the names of its
  contributors may be used to endorse or promote products derived from
  this software without specific prior written permission.
  .
@@ -1382,42 +236,939 @@ License:   BSD-3-Clause
  On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
  License can be found in `/usr/share/common-licenses/BSD'.
 
-Files:     cameras/SXMacLib.h
-           cameras/SXUSB.h
-Copyright: 2003-2004 David Schmenk
-License:   MIT
- Permission is hereby granted, free of charge, to any person obtaining a
- copy of this software and associated documentation files (the
- "Software"), to deal in the Software without restriction, including
- without limitation the rights to use, copy, modify, merge, publish,
- distribute, and/or sell copies of the Software, and to permit persons
- to whom the Software is furnished to do so, provided that the above
- copyright notice(s) and this permission notice appear in all copies of
- the Software and that both the above copyright notice(s) and this
- permission notice appear in supporting documentation.
- .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
- OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
- OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
- HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL
- INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
- FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
- NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION
- WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- .
- Except as contained in this notice, the name of a copyright holder
- shall not be used in advertising or otherwise to promote the sale, use
- or other dealings in this Software without prior written authorization
- of the copyright holder.
 
-Files:     src/indi_gui.cpp
-           src/indi_gui.h
-Copyright: 2009 Geoffrey Hausheer.
-License:   LGPL-2.1+
- Redraw for libindi/baseclient by Patrick Chevalley
- Copyright (c) 2014 Patrick Chevalley
+Files: cam_moravian.cpp
+ cam_moravian.h
+ cam_skyraider.cpp
+ cam_ssag.h
+ cam_svb.cpp
+ cam_svb.h
+ cameras/_SSAGIF.h
+ cameras/altaircam_sdk.h
+ circbuf.h
+ comet_tool.cpp
+ comet_tool.h
+ confirm_dialog.cpp
+ confirm_dialog.h
+ drift_tool.cpp
+ drift_tool.h
+ event_server.h
+ fitsiowrap.cpp
+ fitsiowrap.h
+ gear_simulator.h
+ guiding_assistant.h
+ log_uploader.cpp
+ log_uploader.h
+ nudge_lock.cpp
+ nudge_lock.h
+ optionsbutton.cpp
+ optionsbutton.h
+ phdcontrol.cpp
+ phdcontrol.h
+ phdindiclient.cpp
+ phdindiclient.h
+ rotator.cpp
+ rotator.h
+ rotator_ascom.cpp
+ rotator_ascom.h
+ rotators.h
+ runinbg.cpp
+ runinbg.h
+ statswindow.cpp
+ statswindow.h
+Copyright: 2013, Andy Galasso
+  2013-2014, Andy Galasso
+  2014, Andy Galasso
+  2014-2017, Andy Galasso
+  2015, Andy Galasso
+  2017, Andy Galasso
+  2018, Andy Galasso
+  2019, Andy Galasso
+  2020, Andy Galasso
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
  .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: graph.cpp
+ guide_algorithm.h
+ guide_algorithm_hysteresis.cpp
+ guide_algorithm_hysteresis.h
+ guide_algorithm_identity.cpp
+ guide_algorithm_identity.h
+ guide_algorithm_lowpass.cpp
+ guide_algorithm_lowpass.h
+ guide_algorithm_lowpass2.cpp
+ guide_algorithm_lowpass2.h
+ guide_algorithm_resistswitch.cpp
+ guide_algorithm_resistswitch.h
+ guide_algorithms.h
+ guider.h
+ myframe.cpp
+ myframe.h
+ phdconfig.cpp
+ phdconfig.h
+ scope_ascom.cpp
+ scope_ascom.h
+ scope_voyager.cpp
+ star.cpp
+ star.h
+Copyright: 2006-2010, Craig Stark.
+  2008-2010, Craig Stark.
+  2012, Bret McKee
+  2012-2013, Bret McKee
+  2013, Bret McKee
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: Refine_DefMap.cpp
+ Refine_DefMap.h
+ calibration_assistant.cpp
+ calibration_assistant.h
+ calreview_dialog.cpp
+ calreview_dialog.h
+ calstep_dialog.cpp
+ calstep_dialog.h
+ camcal_import_dialog.cpp
+ camcal_import_dialog.h
+ darks_dialog.cpp
+ darks_dialog.h
+ guiding_stats.cpp
+ guiding_stats.h
+ logger.cpp
+ logger.h
+ profile_wizard.cpp
+ profile_wizard.h
+ starcross_test.cpp
+ starcross_test.h
+Copyright: 2013, Bruce Waddington
+  2014, Bruce Waddington
+  2015, Bruce Waddington
+  2016, Bruce Waddington
+  2018, Bruce Waddington
+  2023, Bruce Waddington
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: cam_ascom.h
+ cam_indi.h
+ cam_ioptron.cpp
+ cam_ioptron.h
+ cam_qhy.cpp
+ cam_qhy.h
+ cam_skyraider.h
+ cam_touptek.cpp
+ cam_touptek.h
+ cam_wdm.h
+ comdispatch.cpp
+ comdispatch.h
+ event_server.cpp
+ phdupdate.cpp
+ phdupdate.h
+ pierflip_tool.cpp
+ pierflip_tool.h
+Copyright: 2013, Andy Galasso.
+  2015, Andy Galasso.
+  2015-2019, Andy Galasso.
+  2017, Andy Galasso.
+  2017-2018, Andy Galasso.
+  2018, Andy Galasso.
+  2019, Andy Galasso.
+  2020, Andy Galasso.
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: thirdparty/HID_Utilities/HID_Config_Utilities.c
+ thirdparty/HID_Utilities/HID_Error_Handler.c
+ thirdparty/HID_Utilities/HID_Name_Lookup.c
+ thirdparty/HID_Utilities/HID_Queue_Utilities.c
+ thirdparty/HID_Utilities/HID_Utilities.c
+ thirdparty/HID_Utilities/HID_Utilities_External.h
+ thirdparty/HID_Utilities/IOHIDManager/IOHIDDevice_.c
+ thirdparty/HID_Utilities/IOHIDManager/IOHIDDevice_.h
+ thirdparty/HID_Utilities/IOHIDManager/IOHIDElement_.c
+ thirdparty/HID_Utilities/IOHIDManager/IOHIDElement_.h
+ thirdparty/HID_Utilities/IOHIDManager/IOHIDLib_.h
+ thirdparty/HID_Utilities/IOHIDManager/ImmrHIDUtilAddOn.c
+ thirdparty/HID_Utilities/IOHIDManager/ImmrHIDUtilAddOn.h
+Copyright: 2009, Apple Inc.
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the “Software”), to
+ deal in the Software without restriction, including without limitation the
+ rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+
+Files: contributions/MPI_IS_gaussian_process/README.md
+ contributions/MPI_IS_gaussian_process/src/covariance_functions.cpp
+ contributions/MPI_IS_gaussian_process/src/covariance_functions.h
+ contributions/MPI_IS_gaussian_process/src/gaussian_process.cpp
+ contributions/MPI_IS_gaussian_process/src/gaussian_process.h
+ contributions/MPI_IS_gaussian_process/tests/gaussian_process/evaluate_performance.cpp
+ contributions/MPI_IS_gaussian_process/tests/gaussian_process/gaussian_process_test.cpp
+ contributions/MPI_IS_gaussian_process/tests/gaussian_process/gp_guider_test.cpp
+ contributions/MPI_IS_gaussian_process/tests/gaussian_process/guide_performance_test.cpp
+ contributions/MPI_IS_gaussian_process/tests/gaussian_process/guide_performance_tools.h
+ contributions/MPI_IS_gaussian_process/tests/gaussian_process/math_tools_test.cpp
+ contributions/MPI_IS_gaussian_process/tools/math_tools.cpp
+ contributions/MPI_IS_gaussian_process/tools/math_tools.h
+Copyright: 2014-2017, Max Planck Society.
+  2017, Max Planck Society.
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: guide_algorithm_zfilter.cpp
+ guide_algorithm_zfilter.h
+ polardrift_tool.h
+ polardrift_toolwin.cpp
+ polardrift_toolwin.h
+ staticpa_tool.h
+ staticpa_toolwin.cpp
+ staticpa_toolwin.h
+ zfilterfactory.cpp
+ zfilterfactory.h
+Copyright: 2017, Ken Self
+  2018, Ken Self
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: cam_LELXUSBWebcam.cpp
+ cam_LELXUSBWebcam.h
+ cam_LEParallelWebcam.cpp
+ cam_LEParallelWebcam.h
+ cam_LESerialWebcam.cpp
+ cam_LESerialWebcam.h
+ cam_LEwebcam.cpp
+ cam_opencv.cpp
+ cam_opencv.h
+Copyright: 2013, Bret McKee.
+  2013, Craig Stark.
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: manualcal_dialog.cpp
+ manualcal_dialog.h
+ star_profile.cpp
+ star_profile.h
+ target.cpp
+ target.h
+Copyright: 2013, Sylvain Girard
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: cam_ascom.cpp
+ cam_sxv.cpp
+ cam_sxv.h
+ gear_simulator.cpp
+Copyright: 2006-2010, Craig Stark
+  2008-2010, Craig Stark
+  2010, Craig Stark
+  2013-2020, Andy Galasso
+  2015-2018, Andy Galasso
+  2016-2018, Andy Galasso
+  2018, Andy Galasso
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: aui_controls.cpp
+ aui_controls.h
+ backlash_comp.cpp
+ backlash_comp.h
+Copyright: 2015, Bruce Waddington and Andy Galasso
+  2016, Bruce Waddington and Andy Galasso
+  2016-2017, Bruce Waddington and Andy Galasso
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: serialport_posix.cpp
+ serialport_posix.h
+ stepguider_sxao_indi.cpp
+ stepguider_sxao_indi.h
+Copyright: 2016, Hans Lambermont
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: contributions/MPI_IS_gaussian_process/src/gaussian_process_guider.cpp
+ contributions/MPI_IS_gaussian_process/src/gaussian_process_guider.h
+ guide_algorithm_gaussian_process.cpp
+ guide_algorithm_gaussian_process.h
+Copyright: Max Planck Society
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: imagelogger.cpp
+ imagelogger.h
+ scope_manual_pointing.cpp
+ scope_manual_pointing.h
+Copyright: 2016, openphdguiding.org
+  2017, openphdguiding.org
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: cameras/SXMacLib.c
+ cameras/SXMacLib.h
+ cameras/SXUSB.h
+Copyright: 2003, David Schmenk
+  2004, David Schmenk
+License: ICU
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the “Software”), to
+ deal in the Software without restriction, including without limitation the
+ rights to use, copy, modify, merge, publish, distribute, and/or sell copies
+ of the Software, and to permit persons to whom the Software is furnished to
+ do so, provided that the above copyright notice(s) and this permission notice
+ appear in all copies of the Software and that both the above copyright
+ notice(s) and this permission notice appear in supporting documentation.
+ .
+ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS.
+ IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE
+ LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR
+ ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
+ IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT
+ OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ .
+ Except as contained in this notice, the name of a copyright holder shall not
+ be used in advertising or otherwise to promote the sale, use or other
+ dealings in this Software without prior written authorization of the
+ copyright holder.
+
+Files: cameras/vcap_v4l.h
+ cameras/vcap_vfw.h
+ cameras/vcapwin.h
+Copyright: John Labenski
+License: UNKNOWN
+
+Files: guide_algorithm.cpp
+ image_math.h
+Copyright: 2006-2010, Craig Stark.
+  2013-2016, Andy Galasso
+  2015, Andy Galasso
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: cam_altair.cpp
+ cam_zwo.h
+Copyright: 2014, Robin Glover
+  2018, Andy Galasso
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: cam_altair.h
+ cam_zwo.cpp
+Copyright: 2014, Robin Glover.
+  2017-2018, Andy Galasso
+  2018, Andy Galasso
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: guider_multistar.cpp
+ guider_multistar.h
+Copyright: 2006-2010, Craig Stark.
+  2012, Bret McKee
+  2020, Bruce Waddington
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: cam_wdm.cpp
+ cam_wdm_base.h
+Copyright: 2006-2010, Craig Stark.
+  2013, Dad Dog Development Ltd.
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: config_indi.cpp
+ config_indi.h
+Copyright: 2006-2009, Craig Stark.
+  2014, Patrick Chevalley
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: scope_indi.cpp
+ scope_indi.h
+Copyright: 2009, Geoffrey Hausheer.
+  2014, Patrick Chevalley
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: about_dialog.cpp
+ about_dialog.h
+Copyright: 2013, Sylvain Girard.
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: json_parser.cpp
+ json_parser.h
+Copyright: 2013, Andy Galasso
+License: BSD-3-clause and/or Expat
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files: indi_gui.cpp
+ indi_gui.h
+Copyright: 2009, Geoffrey Hausheer.
+  2014, Patrick Chevalley
+License: LGPL-2.1+
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Lesser General Public
  License as published by the Free Software Foundation; either
@@ -1437,138 +1188,11 @@ License:   LGPL-2.1+
  On Debian systems, the complete text of the GNU Lesser General Public License
  Version 2.1 can be found in `/usr/share/common-licenses/LGPL-2.1'.
 
-Files:     src/cam_sbigrotator.cpp
-           src/cam_sbigrotator.h
-Copyright: 2006-2010 Craig Stark.
-           2013 Bret McKee
-License:   __UNKNOWN__
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Bret Mckee, Dad Dog Development Ltd nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
-
-Files:     cameras/vcap_vfw.h
-           cameras/vcapwin.h
-Copyright: :   John Labenski License:     wxWidgets V2.0
-License:   __UNKNOWN__
- Usage notes:
- Link against vfw.lib
- Read the header and the cpp file to figure out what something does
- Test "problems" against MSW vidcap.exe to see if the same problem occurs
-
-Files:     src/log_uploader.cpp
-           src/log_uploader.h
-Copyright: 2017-2018 Andy Galasso
-License:   __UNKNOWN__
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Open PHD Guiding, openphdguiding.org, nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
-
-Files:     src/gear_dialog.cpp
-           src/gear_dialog.h
-Copyright: 2013 Bret McKee
-License:   __UNKNOWN__
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Bret McKee, Dad Dog Development, Ltd. nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
-
-Files:     src/cam_MeadeDSI.h
-           src/cam_OSPL130.h
-Copyright: 2006-2010 Craig Stark.
-License:   BSD-3-Clause
- This source code is distrubted under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Craig Stark, Stark Labs nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     src/config_indi.cpp
-           src/config_indi.h
-Copyright: 2006-2009 Craig Stark.
-License:   BSD-3-Clause
- Redraw for libindi/baseclient by Patrick Chevalley
- Copyright (c) 2014 Patrick Chevalley
- .
+Files: cam_indi.cpp
+Copyright: 2009, Geoffrey Hausheer
+  2014, Patrick Chevalley
+  2020, Andy Galasso
+License: BSD-3-clause
  This source code is distributed under the following "BSD" license
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -1596,44 +1220,9 @@ License:   BSD-3-Clause
  On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
  License can be found in `/usr/share/common-licenses/BSD'.
 
-Files:     src/imagelogger.cpp
-           src/imagelogger.h
-Copyright: 2017 openphdguiding.org
-License:   BSD-3-Clause
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of OpenPHDGuiding.org nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     src/cam_wdm.cpp
-           src/cam_wdm_base.h
-Copyright: 2006-2010 Craig Stark.
-License:   BSD-3-Clause
- Refactored by Bret McKee
- Copyright (c) 2013 Dad Dog Development Ltd.
- .
+Files: guiding_assistant.cpp
+Copyright: 2015, Andy Galasso and Bruce Waddington
+License: BSD-3-clause
  This source code is distributed under the following "BSD" license
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -1661,886 +1250,9 @@ License:   BSD-3-Clause
  On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
  License can be found in `/usr/share/common-licenses/BSD'.
 
-Files:     contributions/MPI_IS_gaussian_process/tools/math_tools.cpp
-           contributions/MPI_IS_gaussian_process/tools/math_tools.h
-Copyright: 2014-2017 Max Planck Society.
-License:   BSD-3-Clause
- Redistribution and use in source and binary forms, with or without modification,
- are permitted provided that the following conditions are met:
- .
- 1. Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- .
- 2. Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the documentation
- and/or other materials provided with the distribution.
- .
- 3. Neither the name of the copyright holder nor the names of its contributors
- may be used to endorse or promote products derived from this software without
- specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
- BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- OF THE POSSIBILITY OF SUCH DAMAGE.
- .
- @date      2014-2017
- @copyright Max Planck Society
- .
- @author    Edgar D. Klenske <edgar.klenske@tuebingen.mpg.de>
- @author    Stephan Wenninger <stephan.wenninger@tuebingen.mpg.de>
- @author    Raffi Enficiaud <raffi.enficiaud@tuebingen.mpg.de>
- .
- @brief     Provides mathematical tools needed for the Gaussian process toolbox.
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     contributions/MPI_IS_gaussian_process/src/gaussian_process.cpp
-           contributions/MPI_IS_gaussian_process/src/gaussian_process.h
-Copyright: 2014-2017 Max Planck Society.
-License:   BSD-3-Clause
- Redistribution and use in source and binary forms, with or without modification,
- are permitted provided that the following conditions are met:
- .
- 1. Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- .
- 2. Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the documentation
- and/or other materials provided with the distribution.
- .
- 3. Neither the name of the copyright holder nor the names of its contributors
- may be used to endorse or promote products derived from this software without
- specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
- BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- OF THE POSSIBILITY OF SUCH DAMAGE.
- .
- @date      2014-2017
- @copyright Max Planck Society
- .
- @author    Edgar D. Klenske <edgar.klenske@tuebingen.mpg.de>
- @author    Stephan Wenninger <stephan.wenninger@tuebingen.mpg.de>
- @author    Raffi Enficiaud <raffi.enficiaud@tuebingen.mpg.de>
- .
- @brief     The GP class implements the Gaussian Process functionality.
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     contributions/MPI_IS_gaussian_process/tests/gaussian_process/evaluate_performance.cpp
-           contributions/MPI_IS_gaussian_process/tests/gaussian_process/guide_performance_tools.h
-Copyright: 2017 Max Planck Society.
-License:   BSD-3-Clause
- Redistribution and use in source and binary forms, with or without modification,
- are permitted provided that the following conditions are met:
- .
- 1. Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- .
- 2. Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the documentation
- and/or other materials provided with the distribution.
- .
- 3. Neither the name of the copyright holder nor the names of its contributors
- may be used to endorse or promote products derived from this software without
- specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
- BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- OF THE POSSIBILITY OF SUCH DAMAGE.
- .
- Created by Edgar Klenske <edgar.klenske@tuebingen.mpg.de>
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     contributions/MPI_IS_gaussian_process/src/covariance_functions.cpp
-           contributions/MPI_IS_gaussian_process/src/covariance_functions.h
-Copyright: 2014-2017 Max Planck Society.
-License:   BSD-3-Clause
- Redistribution and use in source and binary forms, with or without modification,
- are permitted provided that the following conditions are met:
- .
- 1. Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- .
- 2. Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the documentation
- and/or other materials provided with the distribution.
- .
- 3. Neither the name of the copyright holder nor the names of its contributors
- may be used to endorse or promote products derived from this software without
- specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
- BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- OF THE POSSIBILITY OF SUCH DAMAGE.
- .
- @date      2014-2017
- @copyright Max Planck Society
- .
- @author    Edgar D. Klenske <edgar.klenske@tuebingen.mpg.de>
- @author    Stephan Wenninger <stephan.wenninger@tuebingen.mpg.de>
- @author    Raffi Enficiaud <raffi.enficiaud@tuebingen.mpg.de>
- .
- @brief     The file holds the covariance functions that can be used with the GP class.
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     src/stepguider_sbigao_indi.h
-           src/stepguider_sxao_indi.h
-Copyright: 2016 Hans Lambermont
-           2019 Jasem Mutlaq
-License:   BSD-3-Clause
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name openphdguiding.org nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     cameras/SXMacLib.c
-Copyright: 2001 Intel Corporation
-           2003 David Schmenk
-License:   MIT
- sxOpen() routine derived from code written by John Hyde, Intel Corp.
- USB Design by Example
- .
- Permission is hereby granted, free of charge, to any person obtaining a
- copy of this software and associated documentation files (the
- "Software"), to deal in the Software without restriction, including
- without limitation the rights to use, copy, modify, merge, publish,
- distribute, and/or sell copies of the Software, and to permit persons
- to whom the Software is furnished to do so, provided that the above
- copyright notice(s) and this permission notice appear in all copies of
- the Software and that both the above copyright notice(s) and this
- permission notice appear in supporting documentation.
- .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
- OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
- OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
- HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL
- INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
- FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
- NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION
- WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- .
- Except as contained in this notice, the name of a copyright holder
- shall not be used in advertising or otherwise to promote the sale, use
- or other dealings in this Software without prior written authorization
- of the copyright holder.
-
-Files:     src/json_parser.h
-Copyright: 2010 Ivan Vashchaev
-           2013 Andy Galasso
-License:   __HEADER___
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Craig Stark, Stark Labs nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- .
- This file contains definitions from vjson, which comes with the following
- license:
- .
- Permission is hereby granted, free of charge, to any person obtaining a copy
- of this software and associated documentation files (the "Software"), to deal
- in the Software without restriction, including without limitation the rights
- to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
- .
- The above copyright notice and this permission notice shall be included in
- all copies or substantial portions of the Software.
- .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- THE SOFTWARE.
-
-Files:     locale/messages.pot
-Copyright: 2013 Sylvain Girard
-License:   __UNKNOWN__
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Bret McKee, Dad Dog Development Ltd, nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- .
- , fuzzy
-
-Files:     src/scope_ascom.h
-Copyright: 2006-2010 Craig Stark.
-License:   __UNKNOWN__
- Modified by Bret McKee
- Copyright (c) 2012-2013 Bret McKee
- .
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Bret McKee, Dad Dog Development,
- Craig Stark, Stark Labs nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
-
-Files:     src/guide_algorithm.cpp
-Copyright: 2013-2016 Andy Galasso
-License:   __UNKNOWN__
- Based upon work by Craig Stark and Bret McKee.
- Copyright (c) 2006-2010 Craig Stark.
- .
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Bret McKee, Dad Dog Development,
- Craig Stark, Stark Labs nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
-
-Files:     locale/fr_FR/messages.po
-Copyright: 2013 Sylvain Girard
-License:   __UNKNOWN__
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Bret McKee, Dad Dog Development Ltd, nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- .
- , 2014.
-
-Files:     src/sha1.cpp
-Copyright: __NO_COPYRIGHT__ in: src/sha1.cpp
-License:   __UNKNOWN__
- Disclaimer: This code is presented "as is" without any guarantees.
- Details:    Implementation of the SHA1 hashing algorithm.
-
-Files:     src/graph.cpp
-Copyright: 2008-2010 Craig Stark.
-License:   __UNKNOWN__
- Seriously modified by Bret McKee
- Copyright (c) 2013 Bret McKee
- .
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Craig Stark, Stark Labs,
- Bret McKee, Dad Dog Development, Ltd, nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
-
-Files:     src/camcal_import_dialog.cpp
-Copyright: 2015 Bruce Waddington
-License:   __UNKNOWN__
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Bret McKee, Dad Dog Development,
- Craig Stark, Stark Labs nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- .
- Handles import of camera calibration files (dark library, bad-pix map files) from user-selected profile to the current
- profile Source profile choices are limited to camera data with compatible geometry
-
-Files:     locale/ru_RU/messages.po
-Copyright: 2013 Sylvain Girard
-License:   __UNKNOWN__
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Bret McKee, Dad Dog Development Ltd, nor the names
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
-
-Files:     locale/uk_UA/messages.po
-Copyright: 2013 Sylvain Girard
-License:   __UNKNOWN__
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Bret McKee, Dad Dog Development Ltd, nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- Oleh Malyi <astroclubzp@gmail.com>, 2014.
-
-Files:     cmake_modules/FindASCOM_INTERFACE.cmake
-Copyright: 2006 Jasem Mutlaq <mutlaqja@ikarustech.com> Based on FindLibfacile  Carsten Niehaus, <cniehaus@gmx.de>
-           2010 Bret McKee <bretm@boneheads.us>
-License:   __UNKNOWN__
- Based on work which contained this copyright:
- .
- Redistribution and use is allowed according to the terms of the BSD license.
- For details see the accompanying COPYING-CMAKE-SCRIPTS file.
-
-Files:     thirdparty/VidCapture/Source/VidCapture/CVVidCapture.h
-Copyright: 2003 Michael Ellison (mike@codevis.com)
-License:   __UNKNOWN__
- You may use this software in source and/or binary form, with or without
- modification, for commercial or non-commercial purposes, provided that
- you comply with the following conditions:
- .
- * Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- .
- * Redistributions of modified source must be clearly marked as modified,
- and due notice must be placed in the modified source indicating the
- type of modification(s) and the name(s) of the person(s) f
- said modification(s).
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
- TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
- PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-Files:     src/sha1.h
-Copyright: __NO_COPYRIGHT__ in: src/sha1.h
-License:   __UNKNOWN__
- Disclaimer: This code is presented "as is" without any guarantees.
- Details:    Defines the API for the corresponding SHA1 implementation.
-
-Files:     cameras/vcap_v4l.h
-Copyright: :   John Labenski License:     wxWidgets V2.0
-License:   __UNKNOWN__
- Usage notes:
-
-Files:     src/cam_ascom.cpp
-Copyright: 2010 Craig Stark
-           2013-2020 Andy Galasso
-License:   __UNKNOWN__
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Craig Stark, Stark Labs, openphdguiding.org nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
-
-Files:     contributions/MPI_IS_gaussian_process/tests/gaussian_process/math_tools_test.cpp
-Copyright: 2014-2017 Max Planck Society.
-License:   BSD-3-Clause
- Redistribution and use in source and binary forms, with or without modification,
- are permitted provided that the following conditions are met:
- .
- 1. Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- .
- 2. Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the documentation
- and/or other materials provided with the distribution.
- .
- 3. Neither the name of the copyright holder nor the names of its contributors
- may be used to endorse or promote products derived from this software without
- specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
- BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- OF THE POSSIBILITY OF SUCH DAMAGE.
- .
- Created by Edgar Klenske <edgar.klenske@tuebingen.mpg.de>
- .
- This file tests the math tools.
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     contributions/MPI_IS_gaussian_process/CMakeLists.txt
-Copyright: 2014-2015 Max Planck Society.
-License:   BSD-3-Clause
- Redistribution and use in source and binary forms, with or without modification,
- are permitted provided that the following conditions are met:
- .
- 1. Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- .
- 2. Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the documentation
- and/or other materials provided with the distribution.
- .
- 3. Neither the name of the copyright holder nor the names of its contributors
- may be used to endorse or promote products derived from this software without
- specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
- BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- OF THE POSSIBILITY OF SUCH DAMAGE.
- .
- This project contains part of the Gaussian process library of the Max Planck Society,
- Institute for Intelligent Systems, Tuebingen, Germany.
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     src/json_parser.cpp
-Copyright: 2010 Ivan Vashchaev
-           2013 Andy Galasso
-License:   BSD-3-Clause
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Craig Stark, Stark Labs nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- .
- This file contains a modified version of vjson, which comes with the following
- license:
- .
- Permission is hereby granted, free of charge, to any person obtaining a copy
- of this software and associated documentation files (the "Software"), to deal
- in the Software without restriction, including without limitation the rights
- to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
- .
- The above copyright notice and this permission notice shall be included in
- all copies or substantial portions of the Software.
- .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- THE SOFTWARE.
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     src/precompiled_header.cpp
-Copyright: 2012 Bret McKee
-License:   BSD-3-Clause
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Craig Stark, Stark Labs nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- .
- this file's only purpose is for use with MSCV precompiled headers.  I don't generally like precompiled
- headers, but for PHD is speeds up compile times by more that 5X on my machine, so here it is.
- .
- If you are not using MSVC, you don't need to include this file in your build
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     LICENSE.txt
-Copyright: 2013-2019 Open PHD Guiding development team
-           2014-2015 Max Planck Society
-License:   BSD-3-Clause
- Redistribution and use in source and binary forms, with or without modification,
- are permitted provided that the following conditions are met:
- .
- 1. Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- .
- 2. Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the documentation
- and/or other materials provided with the distribution.
- .
- 3. Neither the name of the copyright holder nor the names of its contributors
- may be used to endorse or promote products derived from this software without
- specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
- BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- OF THE POSSIBILITY OF SUCH DAMAGE.
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     src/stepguider_sbigao_indi.cpp
-Copyright: 2016 Hans Lambermont
-License:   BSD-3-Clause
- SBIG AO Added by Jasem Mutlaq
- Copyright (c) 2019 Jasem Mutlaq
- .
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name openphdguiding.org nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     src/camera.cpp
-Copyright: 2006-2010 Craig Stark.
-License:   BSD-3-Clause
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of Craig Stark, Stark Labs nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- .
- General camera routines not specific to any one cam
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     src/zfilterfactory.cpp
-Copyright: 2018 Ken Self
-License:   BSD-3-Clause
- This source code is distributed under the following "BSD" license
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- Redistributions of source code must retain the above copyright notice,
- this list of conditions and the following disclaimer.
- Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the
- documentation and/or other materials provided with the distribution.
- Neither the name of openphdguiding.org nor the names of its
- contributors may be used to endorse or promote products derived from
- this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- POSSIBILITY OF SUCH DAMAGE.
- .
- Based on mkfilter by A.J. Fisher, University of York    September 1992
- https://www-users.cs.york.ac.uk/~fisher/mkfilter/
- <fisher@minster.york.ac.uk>
- .
- On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
- License can be found in `/usr/share/common-licenses/BSD'.
-
-Files:     src/scope_ascom.cpp
-Copyright: 2006-2010 Craig Stark.
-License:   BSD-3-Clause
- Modified by Bret McKee
- Copyright (c) 2012-2013 Bret McKee
- .
+Files: scope_eqmac.h
+Copyright: 2012, Craig Stark
+License: BSD-3-clause
  This source code is distributed under the following "BSD" license
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -2568,155 +1280,87 @@ License:   BSD-3-Clause
  On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
  License can be found in `/usr/share/common-licenses/BSD'.
 
-#----------------------------------------------------------------------------
-# xml and html files (skipped):
-#         phd2.appdata.xml
-#         MacOSXBundleInfo.plist.in
-#         locale/fr_FR/help/PHD2GuideHelp.hhc
-#         locale/fr_FR/help/Basic_use.htm
-#         locale/fr_FR/help/Guide_algorithms.htm
-#         locale/fr_FR/help/Introduction.htm
-#         locale/fr_FR/help/Trouble_shooting.htm
-#         locale/fr_FR/help/Tools.htm
-#         locale/fr_FR/help/MainScreen.htm
-#         locale/fr_FR/help/Darks_BadPixel_Maps.htm
-#         locale/fr_FR/help/Visualization.htm
-#         locale/fr_FR/help/Advanced_settings.htm
-#         locale/ru_RU/help/PHD2GuideHelp.hhc
-#         locale/ru_RU/help/Basic_use.htm
-#         locale/ru_RU/help/Guide_algorithms.htm
-#         locale/ru_RU/help/Introduction.htm
-#         locale/ru_RU/help/Trouble_shooting.htm
-#         locale/ru_RU/help/Tutorials.htm
-#         locale/ru_RU/help/Tools.htm
-#         locale/ru_RU/help/MainScreen.htm
-#         locale/ru_RU/help/KeyboardShortcuts.htm
-#         locale/ru_RU/help/Darks_BadPixel_Maps.htm
-#         locale/ru_RU/help/PHD2GuideHelp.hhk
-#         locale/ru_RU/help/Visualization.htm
-#         locale/ru_RU/help/Glossary.html
-#         locale/ru_RU/help/Advanced_settings.htm
-#         locale/zh_TW/help/PHD2GuideHelp.hhc
-#         locale/zh_TW/help/Basic_use.htm
-#         locale/zh_TW/help/Guide_algorithms.htm
-#         locale/zh_TW/help/Introduction.htm
-#         locale/zh_TW/help/Trouble_shooting.htm
-#         locale/zh_TW/help/Tools.htm
-#         locale/zh_TW/help/MainScreen.htm
-#         locale/zh_TW/help/KeyboardShortcuts.htm
-#         locale/zh_TW/help/Darks_BadPixel_Maps.htm
-#         locale/zh_TW/help/PHD2GuideHelp.hhk
-#         locale/zh_TW/help/Visualization.htm
-#         locale/zh_TW/help/Advanced_settings.htm
-#         locale/ja_JP/help/MainScreen.html
-#         locale/ja_JP/help/PHD2GuideHelp.hhc
-#         locale/ja_JP/help/Tutorials.html
-#         locale/ja_JP/help/Basic_use.html
-#         locale/ja_JP/help/Darks_BadPixel_Maps.html
-#         locale/ja_JP/help/Trouble_shooting.html
-#         locale/ja_JP/help/Tools.html
-#         locale/ja_JP/help/Introduction.html
-#         locale/ja_JP/help/KeyboardShortcuts.html
-#         locale/ja_JP/help/Visualization.html
-#         locale/ja_JP/help/Advanced_settings.html
-#         locale/ja_JP/help/Glossary.html
-#         locale/ja_JP/help/Guide_algorithms.html
-#         locale/ja_JP/help/PHD2_files/Basic_use.htm
-#         locale/ja_JP/help/PHD2_files/Guide_algorithms.htm
-#         locale/ja_JP/help/PHD2_files/Introduction.htm
-#         locale/ja_JP/help/PHD2_files/Trouble_shooting.htm
-#         locale/ja_JP/help/PHD2_files/Tutorials.htm
-#         locale/ja_JP/help/PHD2_files/Tools.htm
-#         locale/ja_JP/help/PHD2_files/MainScreen.htm
-#         locale/ja_JP/help/PHD2_files/KeyboardShortcuts.htm
-#         locale/ja_JP/help/PHD2_files/Darks_BadPixel_Maps.htm
-#         locale/ja_JP/help/PHD2_files/Visualization.htm
-#         locale/ja_JP/help/PHD2_files/Advanced_settings.htm
-#         thirdparty/frameworks/SBIGUDrv.framework/Versions/A/Resources/Info.plist
-#         help/PHD2GuideHelp.hhc
-#         help/Basic_use.htm
-#         help/Guide_algorithms.htm
-#         help/Introduction.htm
-#         help/Trouble_shooting.htm
-#         help/Tutorials.htm
-#         help/Tools.htm
-#         help/MainScreen.htm
-#         help/KeyboardShortcuts.htm
-#         help/Darks_BadPixel_Maps.htm
-#         help/Visualization.htm
-#         help/Glossary.html
-#         help/Advanced_settings.htm
-#         help/Supplemental_Info.htm
+Files: stepguider_sbigao_indi.cpp
+Copyright: 2016, Hans Lambermont
+  2019, Jasem Mutlaq
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
 
-#----------------------------------------------------------------------------
-# huge files   (skipped):
-#         locale/fr_FR/PHD2_Guide_Utilisateur.doc
-#         thirdparty/gettext-0.14.4-bin.zip
-#         WinLibs/wxVidCapLibd_wx29.lib
-#         WinLibs/ASICamera2.dll
-#         WinLibs/AltairCam_legacy.dll
-#         WinLibs/wxVidCapLib_wx29.lib
-#         WinLibs/altaircam.dll
-#         WinLibs/toupcam.dll
-#         WinLibs/SVBCameraSDK.dll
-#         WinLibs/qhyccd.dll
-#         cameras/toupcam/mac/libtoupcam.dylib
-#         cameras/toupcam/linux/arm64/libtoupcam.so
-#         cameras/toupcam/linux/x86/libtoupcam.so
-#         cameras/toupcam/linux/armel/libtoupcam.so
-#         cameras/toupcam/linux/armhf/libtoupcam.so
-#         cameras/toupcam/linux/x64/libtoupcam.so
-#         cameras/qhyccdlibs/mac/universal/libqhyccd.dylib
-#         cameras/qhyccdlibs/linux/arm64/libqhyccd.a
-#         cameras/qhyccdlibs/linux/x86_32/libqhyccd.a
-#         cameras/qhyccdlibs/linux/x86_64/libqhyccd.a
-#         cameras/qhyccdlibs/linux/arm32/libqhyccd.a
-#         cameras/zwolibs/mac/libASICamera2.dylib
-#         cameras/zwolibs/armv8/libASICamera2.a
-#         cameras/zwolibs/armv6/libASICamera2.a
-#         cameras/zwolibs/x86/libASICamera2.a
-#         cameras/zwolibs/x64/libASICamera2.a
-#         cameras/zwolibs/armv7/libASICamera2.a
-#         cameras/svblibs/mac/x86/libSVBCameraSDK.dylib
-#         cameras/svblibs/mac/x64/libSVBCameraSDK.dylib
-#         cameras/svblibs/linux/armv8/libSVBCameraSDK.so
-#         cameras/svblibs/linux/armv6/libSVBCameraSDK.so
-#         cameras/svblibs/linux/x86/libSVBCameraSDK.so
-#         cameras/svblibs/linux/x64/libSVBCameraSDK.so
-#         cameras/svblibs/linux/armv7/libSVBCameraSDK.so
-#         help/PHD2_Help.chm
+Files: stepguider_sbigao_indi.h
+Copyright: 2019, Jasem Mutlaq
+License: BSD-3-clause
+ This source code is distributed under the following "BSD" license
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ Neither the name of Craig Stark, Stark Labs nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
 
-#----------------------------------------------------------------------------
-# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
-# license/copyright files.
+Files: cam_OSPL130.cpp
+Copyright: 2006-2010, Craig Stark.
+License: UNKNOWN
 
-#----------------------------------------------------------------------------
-# License file: LICENSE.txt
- Copyright (c) 2013-2019, Open PHD Guiding development team
- Copyright (c) 2014-2015, Max Planck Society
- All rights reserved.
- .
- Redistribution and use in source and binary forms, with or without modification,
- are permitted provided that the following conditions are met:
- .
- 1. Redistributions of source code must retain the above copyright notice,
-    this list of conditions and the following disclaimer.
- .
- 2. Redistributions in binary form must reproduce the above copyright notice,
-    this list of conditions and the following disclaimer in the documentation
-    and/or other materials provided with the distribution.
- .
- 3. Neither the name of the copyright holder nor the names of its contributors
-    may be used to endorse or promote products derived from this software without
-    specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
- BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- OF THE POSSIBILITY OF SUCH DAMAGE.
+Files: cameras/DSCAMAPI.h
+Copyright: 1999-2012, D-image Corporation.
+License: UNKNOWN
+
+Files: thirdparty/frameworks/SBIGUDrv.framework/Versions/A/Headers/sbigudrv.h
+Copyright: 1995-2012, Santa Barbara Instrument Group
+License: UNKNOWN
+
+Files: cameras/DSDefine.h
+Copyright: 1998-2012, d-image Corporation.
+License: UNKNOWN
+
+Files: thirdparty/frameworks/fcCamFw.framework/Versions/A/Headers/fcCamFw.h
+Copyright: 2006, fishcamp engineering.
+License: UNKNOWN
+
+Files: thirdparty/frameworks/MallincamGuider.framework/Versions/A/Headers/MallincamGuider.h
+Copyright: 2016, rD.
+License: UNKNOWN
