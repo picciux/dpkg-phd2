@@ -1,0 +1,6 @@
+phd2 (2.6.13dev7-1) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ -- Matteo Piscitelli <matteo@matteopiscitelli.it>  Thu, 21 Aug 2025 18:11:28 +0000
